@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT"
 homepage = "https://github.com/pmbaumgartner/voronoiville"
 repository = "https://github.com/pmbaumgartner/voronoiville.git"
-readme = "README.md"
+readme = "readme.md"
 include = [
     "/pyproject.toml",
     "/readme.md",
