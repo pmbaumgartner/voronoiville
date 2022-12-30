@@ -32,8 +32,15 @@ The main tool I've used for Voronoi diagrams is [`scipy.spatial.Voronoi`](https:
 
 There are notebooks comparing & visually testing against `scipy.spatial.Voronoi` in the `extra` folder. 
 
-On average, `voronoiville.voronoi` is ~4x faster. You can get further speedups to about ~5xx faster by passing `return_neighbors=False` to `voronoi`, which prevents iterating and collecting each cells neighbors. There is more info available in `extra/bechmark.ipynb`.
+On average, `voronoiville.voronoi` is ~4x faster. You can get further speedups to about ~5x faster by passing `return_neighbors=False` to `voronoi`, which prevents iterating and collecting each cells neighbors. There is more info available in `extra/bechmark.ipynb`.
+
+**Type Hints & Docstrings**
+
+Everything should be type annotated and have docstrings, so you can autocomplete/Intellisense.
+
+<img src="extra/vscode_example.png" width="300">
 
 **Other Stuff**
+
 Resources:
 - Lloyd relaxation algorithm visual: https://douglasduhaime.com/posts/lloyd-iteration.html
