@@ -8,7 +8,7 @@ repository = "https://github.com/pmbaumgartner/voronoiville.git"
 readme = "README.md"
 include = [
     "/pyproject.toml",
-    "/README.md",
+    "/readme.md",
     "/LICENSE",
     "/src",
     "/.cargo",
