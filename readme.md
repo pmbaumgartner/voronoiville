@@ -1,6 +1,6 @@
 # Voronoiville
 
-Fast Voronoi diagrams in Python written in Rust, thanks to the [`voronoice`](https://crates.io/crates/voronoice) crate, [`PyO3`](https://pyo3.rs/), and [Maturin](https://maturin.rs/).
+Fast Voronoi diagrams in Python written in Rust, thanks to the [`voronoice`](https://crates.io/crates/voronoice) crate, [`PyO3`](https://pyo3.rs/), and [`maturin`](https://maturin.rs/).
 
 **Example Use**
 
