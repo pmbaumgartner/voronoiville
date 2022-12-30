@@ -2,6 +2,19 @@
 name = "voronoiville"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+homepage = "https://github.com/pmbaumgartner/voronoiville"
+repository = "https://github.com/pmbaumgartner/voronoiville.git"
+readme = "README.md"
+include = [
+    "/pyproject.toml",
+    "/README.md",
+    "/LICENSE",
+    "/src",
+    "/.cargo",
+    "!__pycache__",
+    "!*.so",
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
