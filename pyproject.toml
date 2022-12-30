@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "voronoiville"
-description = "Fast Voronoi diagrams in Python written in Rust"
+description = "Fast Voronoi diagrams in Python, written in Rust"
 repository = "https://github.com/pmbaumgartner/voronoiville"
 requires-python = ">=3.7"
 classifiers = [
@@ -13,8 +13,6 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 license = { text = "MIT" }
-
-
 
 [project.urls]
 homepage = "https://github.com/pmbaumgartner/voronoiville"
