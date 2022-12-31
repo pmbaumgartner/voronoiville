@@ -1,5 +1,8 @@
 # Voronoiville
 
+[![pypi](https://img.shields.io/pypi/v/voronoiville.svg)](https://pypi.python.org/pypi/voronoiville)
+[![license](https://img.shields.io/github/license/pmbaumgartner/voronoiville.svg)](https://github.com/pmbaumgartner/voronoiville/blob/main/LICENSE)
+
 Fast Voronoi diagrams in Python written in Rust, thanks to the [`voronoice`](https://crates.io/crates/voronoice) crate, [`PyO3`](https://pyo3.rs/), and [`maturin`](https://maturin.rs/).
 
 **Example Use**
@@ -24,6 +27,18 @@ first_cell.neighbors
 
 # All cells are on the hull (touch the bounding box)
 assert all(cell.is_on_hull for cell in cells)
+```
+
+**Install**
+
+```
+pip install voronoiville
+```
+
+dev:
+
+```
+pip install git+https://github.com/pmbaumgartner/voronoiville
 ```
 
 **Motivation & Comparison**
