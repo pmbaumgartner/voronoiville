@@ -56,7 +56,7 @@ On average, `voronoiville.voronoi` is ~4x faster than `scipy.spatial.Voronoi`. I
 
 Everything should be type annotated and have docstrings, so you can autocomplete/Intellisense.
 
-<img src="extra/vscode_example.png" width="300">
+<img src="extra/vscode_example.png" width="400">
 
 **Other Stuff**
 
