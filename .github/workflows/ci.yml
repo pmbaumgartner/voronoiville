@@ -4,11 +4,17 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - extra/
+    paths:
+      - src/*
+      - Cargo.toml
+      - voronoiville.pyi
     tags:
       - "**"
   pull_request:
+    paths:
+      - src/*
+      - Cargo.toml
+      - voronoiville.pyi
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
