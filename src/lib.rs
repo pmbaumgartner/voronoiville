@@ -133,15 +133,24 @@ fn voronoi(
 ) -> PyResult<Vec<VoronoiCellPy>> {
     let sites: Vec<Point> = points.iter().map(|(x, y)| Point { x: *x, y: *y }).collect();
     let bounding_box: BoundingBox = bounding_box.into();
-    let v: Voronoi = VoronoiBuilder::default()
+    let voronoi = VoronoiBuilder::default()
         .set_sites(sites)
         .set_bounding_box(bounding_box)
         .set_lloyd_relaxation_iterations(lloyd_relaxation_iterations)
         .build()
-        // clippy generates the or_fun_call warning here
         .ok_or(PyRuntimeError::new_err(
             "Can't build Voronoi diagram from given points.",
-        ))?;
+        ));
+    let v = match voronoi {
+        Ok(voronoi) => voronoi,
+        Err(e) => return Err(e),
+    };
+    // clippy generates the or_fun_call warning here
+    // .ok_or(
+    // return PyErr(PyRuntimeError::new_err(
+    //     "Can't build Voronoi diagram from given points.",
+    // )),
+    // )?;
     let cells: Vec<VoronoiCellPy> = match return_neighbors {
         true => v.iter_cells().map(|cell| cell.into()).collect(),
         false => v

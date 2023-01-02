@@ -24,4 +24,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.17.3", features = ["extension-module", "abi3-py37"] }
-voronoice = "0.2.0"
+# voronoice = "0.2.0"
+voronoice = { git = "https://github.com/pmbaumgartner/voronoice", branch = "result" }
